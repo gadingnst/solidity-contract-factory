@@ -1,0 +1,27 @@
+{
+  "name": "erc20-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract:compile": "hardhat compile",
+    "contract:deploy:testnet": "hardhat run scripts/deploy.ts --network testnet",
+    "contract:deploy:mainnet": "hardhat run scripts/deploy.ts --network mainnet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.17.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.50.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
+}
